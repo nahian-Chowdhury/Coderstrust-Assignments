@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+
+</head>
+<body>
+
+
+<h2 style="text-align: center; ">JavaScript Program</h2>
+<br>
+<br>
+<br>
+
+<ul class="lead">
+<li>A computer program is a list of "instructions" to be "executed" by the computer.</li>
+
+<li>In a programming language, these program instructions are called statements.</li>
+
+<li>JavaScript is a programming language.</li>
+
+<li>JavaScript statements are separated by semicolons:</li>
+
+In HTML, JavaScript programs are executed by the web browser.</li>
+
+
+<h3>JavaScript Values</h3>
+<h4>The JavaScript syntax defines two types of values: Fixed values and variable values.</h4>
+<h5>Fixed values are called literals. Variable values are called variables.</h5>
+<h3>JavaScript Literals</h3>
+The most important rules for writing fixed values are:
+
+Numbers are written with or without decimals:
+
+10.50,1001
+<br>
+Strings are text, written within double or single quotes:
+
+"John Doe"
+
+'John Doe'</li>
+</ul>
+
+
+
+<div class="well">
+	<h2>JavaScript variables</h2>
+
+	<p>a variable is defined with an equal sign</p>
+
+
+	example : Var a = 5;
+</div>
+
+<br>
+<br>
+<br>
+
+<div class="well">
+
+	<h1 style="text-align: center"> javascript functions </h1> 
+	<br><br>
+
+	<p>This example calls a function which performs a calculation, and returns the result</p>
+	<p class="lead">the result is : 
+		<span id="demo">
+
+		</span>
+	</p>
+
+
+
+
+	<pre>function addMe(a,b) {
+		return a + b;
+
+
+	}
+	document.getElementById("demo").innerHTML = addMe(10,5);
+	</pre>
+
+	<script type="text/javascript">
+
+
+		function addMe(a,b) {
+			return a + b;
+
+
+		}
+		document.getElementById("demo").innerHTML = addMe(10,5);
+
+
+	</script>
+
+</div>
+
+
+<!-- end of section -->
+<div class="well">
+	<h2>Use of Return in a variable by function</h2> 
+	<p id="new">
+	results of any function can be put in a variable .
+	</p>
+
+	<script type="text/javascript">function myFunc() {
+		return a * b ;
+	}
+	var x = myFunc(9,2);
+
+
+
+	</script>
+
+	<pre>function myFunc() {
+		return a * b ;
+	}
+	var x = myFunc(9,2);
+	</pre>
+</div>
+
+
+
+<!-- new section -->
+<br><br><br>
+
+<div class="well">
+	<h1>function to change fahrenheit to celcius</h1>
+	<p>This example calls a function to convert from Fahrenheit to Celsius:</p>
+
+
+
+	<pre>
+	function tofahrenheit(f) {
+	return (5/9) * (f - 32 );
+
+
+
+	}
+
+	document.getElementById("demo").innerHTML = tofahrenheit(80);
+	</pre>
+
+	<p>This example calls a function to convert from Fahrenheit to Celsius:</p>
+	<p id="new2"></p>
+
+
+	<script type="text/javascript">
+	function tofahrenheit(f) {
+	return (5/9) * (f - 32 );
+
+
+
+	}
+	document.getElementById("new2").innerHTML = tofahrenheit(80);
+	</script>
+
+
+</div>
+
+<!-- end of section -->
+
+
+<br>
+<br>
+<br>
+<br>
+<!-- new section -->
+
+
+
+	<h1>Functions Used as Variable Values</h1>
+
+	<p class="lead">Functions can be used the same way as you use variables, in all types of formulas, assignments, and calculations.</p>
+	<p id="new3">
+		
+	</p>
+
+	<pre>document.getElementById("demo").innerHTML =
+	"The temperature is " + toCelsius(77) + " Celsius";
+
+	function toCelsius(fahrenheit) {
+	    return (5/9) * (fahrenheit-32);
+	} </pre>
+
+	<script type="">
+		function toFar(f) {
+			return (5/9) * (f-32);
+		}
+	document.getElementById("new3").innerHTML = "the temperature is "+ toFar(90) +" celcius.";
+
+	</script>
+
+<br>
+<br>
+<br>
+
+<!-- end section -->
+
+<h1 style="text-align: center">string functions</h1>
+
+	<h2>string lenth(<small>str.length</small>)</h2>
+
+	<pre>
+	<p class="lead">The length of the string is: <span id="new4"></span></p>
+
+	var txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+	document.getElementById("demo").innerHTML = txt.length;
+
+	</pre>
+
+<div class="well">
+
+
+<script>
+var txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+document.getElementById("new4").innerHTML = txt.length;
+</script>
+</div>
+
+<!-- end section -->
+
+<h2>indexOf string method (<small>str.indexOf</small>)</h2>
+<div class="well">
+	<p id="p1">Please locate where 'linkon' occurs!.</p>
+	<button onclick="myFunction()">Try it</button>
+	<br><br>
+	<p class="lead">'linkon' occurs in position : <span id="new5"></span></p>
+
+	
+
+	<pre>
+	var str = document.getElementById("p1").innerHTML;
+	var pos = str.indexOf("locate");
+	document.getElementById("demo").innerHTML = pos;
+	}
+	</pre>
+
+
+	<script type="">
+		function myFunction() {
+		var str = document.getElementById("p1").innerHTML;
+		var pos = str.indexOf('locate');
+		document.getElementById("new5").innerHTML = pos;
+		}
+	</script>
+
+</div>
+
+
+<!-- new section -->
+
+<h2>String slicing method (<small>str.slice</small>)</h2>
+<div class="well">
+	
+	<p>
+		The slice() Method
+		slice() extracts a part of a string and returns the extracted part in a new string.
+
+		The method takes 2 parameters: the starting index (position), and the ending index (position).
+
+	
+	</p>
+
+	<p class="lead">	This example slices out a portion of a string from position 7 to position 13:</p>
+
+	<p class="lead">the sliced string is : <span id="new6"></span></p>
+
+	<pre>
+	
+	var str = "Apple, Banana, Kiwi";
+	document.getElementById("demo").innerHTML = str.slice(7,13);
+
+	</pre>
+
+
+	<script>
+	var str = "Apple, Banana, Kiwi";
+	document.getElementById("new6").innerHTML = str.slice(7,13);
+	</script>
+		
+</div>
+
+<br>
+<br>
+<br>
+<!-- end -->
+
+<!-- substr -->
+
+
+
+<h2>The substr() Method</h2>
+<small><p>substr() is similar to slice().</p></small>
+
+<em><p>The difference is that the second parameter specifies the length of the extracted part.</p></em>
+
+<p class="lead">
+	this example will start slicing in position 7 and then clice 6 characters from that position.
+</p>
+
+<div class="well">
+<p class="lead">the sliced part of the string is : <span id="new7"></span></p>
+<pre>
+var str = "Apple, Banana, Kiwi";
+document.getElementById("demo").innerHTML = str.substr(7,6);
+</pre>
+
+<script type="text/javascript">
+	var str = "apple, banana, kiwi";
+	document.getElementById("new7").innerHTML = str.substr(7,6);
+</script>
+
+	
+</div>
+
+<!-- section new -->
+
+<!-- replacing string -->
+<br>
+<br>
+<br>
+
+<h2>Replacing String Content</h2>
+<div class="well">
+	<p class="lead">The replace() method replaces a specified value with another value in a string:</p>
+
+	<p>Replace "Microsoft" with "W3Schools" in the paragraph below:</p>
+
+	<button onclick="myFunction()">Try it</button>
+
+	<p id="new8">Please visit Microsoft!</p>
+
+	<pre>
+		function myFunction() {
+	    var str = document.getElementById("demo").innerHTML; 
+	    var txt = str.replace("Microsoft","W3Schools");
+	    document.getElementById("demo").innerHTML = txt;
+	}
+	</pre>
+
+	<script>
+			function myFunction() {
+	     	var str = document.getElementById("new8").innerHTML;
+	     	var txt = str.replace("Microsoft","w3schools");
+	     	document.getElementById("new8").innerHTML = txt;
+	}
+	</script>
+</div>
+
+
+<br>
+<br>
+<br>	
+<!-- end -->
+
+<!-- tolowercase uppercase -->
+
+
+<h2>Converting to Upper and Lower Case</h2>
+
+<div class="well">
+	<h3>A string is converted to upper case with toUpperCase():</h3>
+	<br><br>
+
+	<p class="lead">Before: hello, my name is nahian.</p>
+
+	<p class="lead">After: <span id="new9"></span></p>
+
+	<pre>
+		var str = "hello , my name is nahian";
+		var new = str.toUpperCase();
+		document.getElementById("new9").innerHTML = new;
+
+	</pre>
+
+	<script type="">
+		var str = "hello , my name is nahian";
+		var txt = str.toUpperCase();
+		document.getElementById("new9").innerHTML = txt;
+	</script>
+	
+	<h3>to Lowercase</h3>
+	<p>Convert string to lower case:</p>
+
+		<button onclick="myFunction()">Try it</button>
+
+		<p id="new11">Hello World!</p>
+
+		<script>
+		function myFunction() {
+		    var text = document.getElementById("new11").innerHTML;
+		    document.getElementById("new11").innerHTML = text.toLowerCase();
+		}
+
+</script>
+	<pre>
+		function myFunction() {
+		    var text = document.getElementById("new11").innerHTML;
+		    document.getElementById("new11").innerHTML = text.toLowerCase();
+		}
+	</pre>
+</div>
+
+<!-- end -->
+<br>
+<br>
+<br>
+<!-- concat -->
+
+
+
+<h2>Concat method <small>( str.concat )</small></h2>
+
+<div class="well">
+	
+<p class="lead">The concat() method joins two or more strings:</p>
+
+	<h5><span>result: </span><span id="new12"></span></h5>
+
+<script>
+var text1 = "Hello";
+var text2 = "World!";
+document.getElementById("new12").innerHTML = text1.concat(" ",text2);
+</script>
+
+<pre>
+var text1 = "Hello";
+var text2 = "World!";
+document.getElementById("new12").innerHTML = text1.concat(" ",text2);</pre>
+
+<p class="lead">
+	also it can be written as:
+	<p>var text = "Hello" + " " + "World!"</p>
+</p>
+</div>
+
+<br>
+<br>
+<br>
+<br>		
+<!-- end string method -->
+
+
+<h1 style="text-align: center">Number methods</h1>
+
+<h2>toString Method </h2>
+
+<p>The toString() method converts a number to a string.</p>
+
+<p id="new13"></p>
+
+<script>
+
+var x = 250;
+document.getElementById("new13").innerHTML = x.toString();
+
+</script>
+<pre>
+	var x = 250;
+document.getElementById("demo").innerHTML = x.toString();
+    
+   
+</pre>
+
+<br><br><br>
+
+<h2>Tofixed method <small>(x.toFixed)</small></h2>
+<p>The toFixed() method rounds a number to a given number of digits.</p>
+<p>For working with money, toFixed(2) is perfect.</p>
+
+<p id="new14"></p>
+
+<script>
+var x = 300.2638;
+
+document.getElementById("new14").innerHTML = x.toFixed(2) + "<br>" +
+
+x.toFixed(1) + "<br>" +
+x.toFixed(3);
+
+
+
+</script>
+<pre>
+	var x = 300.2638;
+	document.getElementById("demo").innerHTML =
+    x.toFixed(2) + "<br>" +
+    x.toFixed(1) + "<br>" +
+    x.toFixed(3) + "<br>" +
+    
+</pre>
+
+
+<!-- end -->
+
+
+<h2>JavaScript Math Object</h2>
+
+
+<div class="well">
+	<p class="lead">
+		this method rounds the figure according to the next number.
+	</p>
+
+	<h4>Before: 227.86</h4>
+	<h4 style="display: inline-block">After : <h4 style="display: inline-block;" id="new15"></h4></h4>
+	
+	<pre>
+	var x = 227.86;
+	document.getElementById("new15").innerHTML = Math.round(x);
+		
+	</pre>	
+</div>
+
+<script type="text/javascript">
+	var x = 227.86;
+	document.getElementById("new15").innerHTML = Math.round(x);
+</script>
+<br><br><br>
+
+<!-- end -->
+
+<h1>Math.pow()</h1>
+
+<p>Math.pow(x,y) returns the value of x to the power of y:</p>
+
+<span>Result is : <p id="new16"></p></span>
+
+<script>
+document.getElementById("new16").innerHTML = Math.pow(8,2);
+</script>
+<pre>document.getElementById("new16").innerHTML = Math.pow(8,2);</pre>
+<!-- end -->
+
+<br><br><br>
+
+
+<div class="well">
+		<h1>JavaScript Math.floor()</h1>
+
+		<p>Math.floor(x) returns the value of x rounded <strong>down</strong> to its nearest integer:</p>
+
+		<p id="new17"></p>
+
+		<script>
+		document.getElementById("new17").innerHTML = Math.floor(4.7);
+		</script>
+
+		<pre>document.getElementById("new17").innerHTML = Math.floor(4.7)</pre>
+</div>
+<br><br><br>
+<!-- end -->
+
+
+<h1>JavaScript <small>Math.min()</small></h1>
+
+<p>Math.min() returns the lowest value in a list of arguments:</p>
+
+<span>Result is : <span id="new18"></span></span>
+
+<script>
+document.getElementById("new18").innerHTML =
+Math.min(0, 150, 30, 20, -8, -200);
+</script>
+<br><br>
+
+<pre>document.getElementById("new18").innerHTML =
+Math.min(0, 150, 30, 20, -8, -200);</pre>
+
+<!-- end -->
+<br><br>
+
+<!-- js conditions -->
+
+<h1 style="text-align: center">Js Conditions <small>{If , Else}</small></h1>
+<br><br>
+<h3>In JavaScript we have the following conditional statements:</h3>
+
+<code>
+<p class="lead">Use if to specify a block of code to be executed, if a specified condition is true</p>
+<p class="lead">Use else to specify a block of code to be executed, if the same condition is false</p>
+<p class="lead">Use else if to specify a new condition to test, if the first condition is false</p>
+<p class="lead">Use switch to specify many alternative blocks of code to be executed.</p>
+</code>
+
+<pre style="text-align: center">Syntax:
+
+if (condition) {
+    block of code to be executed if the condition is true
+}
+</pre>
+
+
+<div class="well">
+	<p id="new20" class="lead"></p>
+
+	<script type="">
+		var x = 5;
+
+		if (x > 4) {
+		document.getElementById("new20").innerHTML = "x is greater than 4";
+
+		}else {
+			document.getElementById("new20").innerHTML = "x is smaller than 4";
+		}
+		
+	</script>
+		<br>
+	<pre>
+		var x = 5;
+
+		if (x > 4) {
+		document.getElementById("new20").innerHTML = "x is greater than 4";
+
+		}else {
+			document.getElementById("new20").innerHTML = "x is smaller than 4";
+		}
+	</pre>
+</div>
+
+
+
+<!-- end -->
+
+
+<!-- else if  -->
+
+<br><br><br>
+
+<div class="well">
+		<h2>Else If</h2>
+
+	<p>Click the button to get a time-based greeting:</p>
+
+	<button onclick="myFunction()">Try it</button>
+
+	<p id="new21"></p>
+
+	<script>
+		function myFunction() {
+		    var greeting;
+		    var time = new Date().getHours();
+		    if (time < 10) {
+		        greeting = "Good morning";
+		    } else if (time < 20) {
+		        greeting = "Good day";
+		    } else {
+		        greeting = "Good evening";
+		    }
+		document.getElementById("new21").innerHTML = greeting;
+		}
+
+
+	</script>
+	<br><br>
+	
+	<pre>
+		function myFunction() {
+	    var greeting;
+	    var time = new Date().getHours();
+	    if (time < 10) {
+	        greeting = "Good morning";
+	    } else if (time < 20) {
+	        greeting = "Good day";
+	    } else {
+	        greeting = "Good evening";
+	    }
+		document.getElementById("new21").innerHTML = greeting;
+		}
+	</pre>
+</div>
+
+
+<br><br><br><br>
+
+<!-- for loops -->
+
+<div class="well">
+	<h1 style="text-align: center">For Loops</h1>
+	<p id="new22"></p>
+
+	<script type="">
+	var i = 0;
+	var text = " ";
+		for (var i = 0; i < 10; i++) {
+			// document.getElementById("new22").innerHTML = i + "<br>";
+			text += "the number is: " + i + "<br>";
+		}
+		document.getElementById("new22").innerHTML = text;
+	</script>
+
+	<pre>
+		var i = 0;
+		var text = " ";
+		for (var i = 0; i < 10; i++) {
+			// document.getElementById("new22").innerHTML = i + "<b/r>";
+			text += "the number is: " + i + "<b/r>";
+		}
+		document.getElementById("new22").innerHTML = text;
+	</pre>
+</div>
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="script.js"</script>
+</body>
+</html>
